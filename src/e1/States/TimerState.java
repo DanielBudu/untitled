@@ -30,6 +30,7 @@ public class TimerState implements ThermostatState {
 
     @Override
     public String screenInfo() {
+        // TODO: SE PODRIA QUITAR EL IF YA QUE NUNCA DEBERIA PODER ESTAR APAGADO
         return context.getCurrentTemp() + " Modo Timer (faltan" + minutesLeft + "minutos) - Calefaccion "
                 + (context.isHeaterOn() ? "encendida." : "apagada.");
     }
