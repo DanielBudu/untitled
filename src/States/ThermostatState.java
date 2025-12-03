@@ -1,8 +1,6 @@
 package States;
 
 public interface ThermostatState {
-
-
         void newTemperature(float currentTemp);
         String screenInfo();
 

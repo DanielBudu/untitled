@@ -4,7 +4,6 @@ import Logger.EventLogger;
 import States.OffState;
 import States.ThermostatState;
 
-
 public class Thermostat {
 
     private ThermostatState state;
