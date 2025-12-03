@@ -55,6 +55,7 @@ public class TimerState implements ThermostatState {
 
     @Override
     public void toProgram(float temp) {
+        // TODO: ESTA TRANSICION DE ESTADO NO SE PUEDE HACER, HAY QUE O NO HACER NADA O HACER QUE PASE PRIMERO POR OFF O MANUAL Y LUEGO A PROGRAM
         context.setState(new ProgramState(context, temp));
     }
 }
