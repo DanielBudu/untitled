@@ -9,11 +9,9 @@ public class Thermostat {
     private ThermostatState state;
     private float currentTemp;
     private boolean heaterOn;
-    private EventLogger log;
 
     public Thermostat() {
         this.state = new OffState(this);
-        this.log = new EventLogger();
     }
 
     public void setState(ThermostatState newState) {
@@ -58,6 +56,6 @@ public class Thermostat {
     }
 
     public void logEvent(String msg) {
-        log.write(msg);
+        EventLogger.write(msg);
     }
 }

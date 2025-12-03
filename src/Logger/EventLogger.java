@@ -8,7 +8,7 @@ public class EventLogger {
 
     private static final String FILE_NAME = "thermostat.log";
 
-    public void write(String msg) {
+    public static void write(String msg) {
         try (FileWriter fw = new FileWriter(FILE_NAME, true)) {
             fw.write(LocalDateTime.now() + " - " + msg + System.lineSeparator());
         } catch (IOException e) {
