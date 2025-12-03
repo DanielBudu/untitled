@@ -1,6 +1,6 @@
-package States;
+package e1.States;
 
-import Thermostat.Thermostat;
+import e1.Thermostat.Thermostat;
 
 public class TimerState implements ThermostatState {
 

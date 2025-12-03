@@ -1,4 +1,4 @@
-package States;
+package e1.States;
 
 public interface ThermostatState {
         void newTemperature(float currentTemp);
