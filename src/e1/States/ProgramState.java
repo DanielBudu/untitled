@@ -15,11 +15,7 @@ public class ProgramState implements ThermostatState {
 
     @Override
     public void newTemperature(float temp) {
-        if (temp < targetTemp) {
-            context.setHeaterOn(true);
-        } else {
-            context.setHeaterOn(false);
-        }
+        context.setHeaterOn(temp < targetTemp);
     }
 
     @Override
