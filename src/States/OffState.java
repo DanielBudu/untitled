@@ -19,7 +19,7 @@ public class OffState implements ThermostatState {
 
     @Override
     public String screenInfo() {
-        return context.getCurrentTemp() + " OFF";
+        return context.getCurrentTemp() + " Modo Off - Calefacción apagada.";
     }
 
     @Override

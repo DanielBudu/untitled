@@ -9,7 +9,7 @@ public class ManualState implements ThermostatState {
     public ManualState(Thermostat context) {
         this.context = context;
         context.setHeaterOn(true); // En manual siempre encendida
-        context.logEvent("Se activa el modo Manual.");
+        context.logEvent("Se activa el modo manual.");
     }
 
     @Override
@@ -20,7 +20,7 @@ public class ManualState implements ThermostatState {
 
     @Override
     public String screenInfo() {
-        return context.getCurrentTemp() + " ON M";
+        return context.getCurrentTemp() + " Modo Manual - Calefacción encendida.";
     }
 
     @Override

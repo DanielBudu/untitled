@@ -24,9 +24,8 @@ public class ProgramState implements ThermostatState {
 
     @Override
     public String screenInfo() {
-        return context.getCurrentTemp() +
-                (context.isHeaterOn() ? " ON" : " OFF") +
-                " P(" + targetTemp + ")";
+        return context.getCurrentTemp() + "Modo Program (a " + targetTemp + " grados) - Calefaccion "
+                + (context.isHeaterOn() ? "encendida." : "apagada.");
     }
 
     @Override

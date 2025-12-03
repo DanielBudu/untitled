@@ -22,18 +22,16 @@ public class TimerState implements ThermostatState {
         // Cada llamada = pasan 5 min
         minutesLeft -= 5;
 
-        context.logEvent("Timer: quedan " + minutesLeft + " minutos.");
-
         if (minutesLeft <= 0) {
-            context.logEvent("Timer finalizado. Se pasa a OFF.");
+            context.logEvent("Se desactiva el modo Timer.");
             context.setState(new OffState(context));
         }
     }
 
     @Override
     public String screenInfo() {
-        return context.getCurrentTemp() +
-                " ON T(" + minutesLeft + ")";
+        return context.getCurrentTemp() + " Modo Timer (faltan" + minutesLeft + "minutos) - Calefaccion "
+                + (context.isHeaterOn() ? "encendida." : "apagada.");
     }
 
     @Override
