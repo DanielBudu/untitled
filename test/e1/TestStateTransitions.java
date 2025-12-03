@@ -4,7 +4,7 @@ import e1.Thermostat.Thermostat;
 import org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-public class StateTransitions {
+public class TestStateTransitions {
 
     @Test
     public void stateOffTransitionsTest() {
