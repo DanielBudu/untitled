@@ -4,7 +4,7 @@ import Thermostat.Thermostat;
 
 public class ManualState implements ThermostatState {
 
-    private Thermostat context;
+    private final Thermostat context;
 
     public ManualState(Thermostat context) {
         this.context = context;

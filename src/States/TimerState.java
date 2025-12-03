@@ -4,7 +4,7 @@ import Thermostat.Thermostat;
 
 public class TimerState implements ThermostatState {
 
-    private Thermostat context;
+    private final Thermostat context;
     private int minutesLeft; // tiempo restante
 
     public TimerState(Thermostat context, int minutes) {

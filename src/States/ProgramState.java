@@ -4,7 +4,7 @@ import Thermostat.Thermostat;
 
 public class ProgramState implements ThermostatState {
 
-    private Thermostat context;
+    private final Thermostat context;
     private float targetTemp;
 
     public ProgramState(Thermostat context, float targetTemp) {
