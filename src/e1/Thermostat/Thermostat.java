@@ -12,7 +12,7 @@ public class Thermostat {
         this.state = new OffState(this);
     }
 
-    public void setState(ThermostatState newState) {
+    void setState(ThermostatState newState) {
         this.state = newState;
     }
 
