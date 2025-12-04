@@ -1,8 +1,6 @@
-package e1.States;
+package e1.Thermostat;
 
-import e1.Thermostat.Thermostat;
-
-public class ProgramState implements ThermostatState {
+class ProgramState implements ThermostatState {
 
     private final Thermostat context;
     private float targetTemp;

@@ -1,8 +1,6 @@
 package e1.Thermostat;
 
 import e1.Logger.EventLogger;
-import e1.States.OffState;
-import e1.States.ThermostatState;
 
 public class Thermostat {
 
