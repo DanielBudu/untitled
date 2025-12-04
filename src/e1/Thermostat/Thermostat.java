@@ -16,6 +16,10 @@ public class Thermostat {
         this.state = newState;
     }
 
+    public ThermostatState getState() {
+        return state;
+    }
+
     public void newTemperature(float temp) {
         this.currentTemp = temp;
         state.newTemperature(temp);
